@@ -3,13 +3,13 @@ import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDLTS2hSPGqW4ybLaS4JLLBN0wH9WueKKk",
-  authDomain: "centrallinks.firebaseapp.com",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_REACT_APP_AUTH_DOMAIN,
   projectId: "centrallinks",
   storageBucket: "centrallinks.appspot.com",
-  messagingSenderId: "266256967938",
-  appId: "1:266256967938:web:2faf4e66f144c8e9763a1b",
-  measurementId: "G-NTPMJY2NPG"
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 const firebaseApp = initializeApp(firebaseConfig)
