@@ -1,6 +1,7 @@
 import './home.css'
 import { useState, useEffect } from 'react'
 import { Social } from '../../components/Social'
+import { Logo } from '../../components/Logo'
 import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 import { toast } from 'react-toastify'
@@ -69,7 +70,7 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <h1>Central Links</h1>
+      <Logo />
       <span>Veja meus links 👇 </span>
 
       <main className="links">
